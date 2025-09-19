@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.flowchart {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.box {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.box-text {
+    pointer-events: none;
+    font-size: 14px;
+    fill: #fff;
+    font-weight: bold;
+}
+
+.authority {
+    fill: #e74c3c;
+}
+
+.exchange {
+    fill: #3498db;
+}
+
+.brokers {
+    fill: #f39c12;
+}
+
+.depository {
+    fill: #8e44ad;
+}
+
+.investors {
+    fill: #27ae60;
+}
+
+.companies {
+    fill: #16a085;
+}
+
+.arrow {
+    fill: none;
+    stroke: #2c3e50;
+    stroke-width: 3;
+    marker-end: url(#arrowhead);
+}
+
+.info-box {
+    margin-top: 40px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 80px;
+    font-size: 16px;
+    color: #2c3e50;
+}

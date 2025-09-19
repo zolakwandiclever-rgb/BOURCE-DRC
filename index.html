@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schéma Interactif Marché Boursier RDC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schéma Interactif Marché Boursier RDC</h1>
+        <svg class="flowchart" width="1000" height="600">
+            <!-- Autorité -->
+            <rect x="400" y="20" width="200" height="60" class="box authority" data-info="Autorité de régulation : Supervise et régule le marché"></rect>
+            <text x="500" y="55" text-anchor="middle" class="box-text">Autorité de régulation</text>
+            
+            <!-- Flèche vers Bourse -->
+            <path d="M500 80 C500 120, 500 120, 500 140" class="arrow"></path>
+            
+            <!-- Bourse RDC -->
+            <rect x="400" y="140" width="200" height="60" class="box exchange" data-info="Bourse RDC : Système de trading et cotation des titres"></rect>
+            <text x="500" y="175" text-anchor="middle" class="box-text">Bourse RDC</text>
+            
+            <!-- Flèches vers Courtiers et Dépôt -->
+            <path d="M400 170 C350 200, 250 200, 250 220" class="arrow"></path>
+            <path d="M600 170 C650 200, 750 200, 750 220" class="arrow"></path>
+            
+            <!-- Courtiers -->
+            <rect x="150" y="220" width="200" height="60" class="box brokers" data-info="Courtiers : Intermédiaires pour les investisseurs"></rect>
+            <text x="250" y="255" text-anchor="middle" class="box-text">Courtiers</text>
+            
+            <!-- Dépôt central -->
+            <rect x="650" y="220" width="200" height="60" class="box depository" data-info="Dépôt central : Gestion des titres et clearing"></rect>
+            <text x="750" y="255" text-anchor="middle" class="box-text">Dépôt central</text>
+            
+            <!-- Flèches vers Investisseurs et Entreprises -->
+            <path d="M250 280 C200 320, 200 400, 250 420" class="arrow"></path>
+            <path d="M750 280 C800 320, 800 400, 750 420" class="arrow"></path>
+            
+            <!-- Investisseurs -->
+            <rect x="150" y="420" width="200" height="60" class="box investors" data-info="Investisseurs : Achètent et vendent des titres"></rect>
+            <text x="250" y="455" text-anchor="middle" class="box-text">Investisseurs</text>
+            
+            <!-- Entreprises -->
+            <rect x="650" y="420" width="200" height="60" class="box companies" data-info="Entreprises : Émettent actions et obligations"></rect>
+            <text x="750" y="455" text-anchor="middle" class="box-text">Entreprises</text>
+        </svg>
+        <div class="info-box">
+            Cliquez sur une boîte pour voir les détails ici.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
